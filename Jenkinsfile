@@ -38,8 +38,8 @@ pipeline {
             steps {
                 bat '''
                 set PATH=%SCANNER_PATH%;%PATH%
-                sonar-scanner -Dsonar.projectKey=backend-sonar-asg2 ^
-                              -Dsonar.projectName=backend-sonar-asg2 ^
+                sonar-scanner -Dsonar.projectKey=wld-asg2-task1 ^
+                              -Dsonar.projectName=wld-asg2-task1 ^
                               -Dsonar.sources=. ^
                               -Dsonar.host.url=http://localhost:9000 ^
                               -Dsonar.token=%SONAR_TOKEN%
